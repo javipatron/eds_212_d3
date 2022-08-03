@@ -1,0 +1,54 @@
+---
+title: "Vectors"
+author: "Javier Patron"
+date: "2022-08-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Making some Vectors
+
+```{r}
+marmots <- c("blue", "green", 4, "yellow")
+
+# Check for class
+
+class(marmots)
+```
+
+# Make another animal
+
+```{r}
+pika <- c(12.4, 6.8, 2.9, 8.8, 8.5)
+class(pika)
+
+##--## Scalar Multiplier
+scale_for_pika <- 5.2 * pika
+scale_for_pika
+
+```
+
+### More Examples
+```{r}
+bananas <- c(1,2,3)
+apples <- c(6,7,8)
+
+"Multiplication" 
+bananas*apples
+"Sum" 
+bananas + apples
+"Resting"
+bananas - apples
+"Dot Product"
+bananas %*% apples
+```
+
