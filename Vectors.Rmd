@@ -42,13 +42,51 @@ scale_for_pika
 bananas <- c(1,2,3)
 apples <- c(6,7,8)
 
-"Multiplication" 
+#Multiplication
 bananas*apples
-"Sum" 
+#Sum
 bananas + apples
-"Resting"
+#Resting
 bananas - apples
-"Dot Product"
+#Dot Product
 bananas %*% apples
+```
+
+
+### Sequences
+Term is seq()
+## Sintax
+seq(a,b,c)
+a= from
+b= to
+c= several stuff like (length=#, by=#)
+
+```{r}
+seq
+```
+
+### Matrices
+# Term is matrix
+
+##Sintax
+# matrix(a,b,c,d)
+# a -> data = (What do you wanna put in the matrix)
+# b -> nrow = # (number of rows)
+# c -> ncol = # (number of columns)
+# d -> byrow = Boolean (If you want to put the data by columns (FALSE), or by rows (TRUE))
+
+
+```{r}
+my_values <- seq(1,10)
+my_values
+
+my_matrix <- matrix(data = my_values, nrow=2, ncol = 5, byrow=FALSE)
+my_matrix
+
+```
+
+
+```{r}
+glimpse(penguins)
 ```
 
